@@ -1,11 +1,12 @@
 :root {
     font-size: 18px;
     /* Colors */
-    --light: #f1faee;
-    --red: #e63946;
-    --sky: #a8dadc;
-    --blue: #457b9d;
-    --navy: #1d3557;
+    --light: hsl(105, 55%, 96%); /* #f1faee; */
+    --red: hsl(355, 78%, 56%); /* #e63946; */
+    /*--sky: hsl(182, 43%, 76%); !* #a8dadc; *!*/
+    --sky: hsl(182, 43%, 84%); /* #a8dadc; */
+    --blue: hsl(203, 39%, 44%); /* #457b9d; */
+    --navy: hsl(215, 50%, 23%); /* #1d3557; */
 
     /* Other variables */
     --gap: 20px;
@@ -34,7 +35,7 @@ button {
     font-size: inherit;
     border: none;
     color: var(--light);
-    background-color: var(--red);
+    background-color: var(--navy);
     padding: calc(0.5 * var(--gap)) var(--gap);
 }
 
@@ -139,12 +140,16 @@ aside a:hover, aside a:focus {
     text-decoration: underline;
 }
 
+.side-header iconify-icon {
+    font-size: 36px;
+}
+
 aside nav {
     display: grid;
     gap: var(--gap);
 }
 
-nav a {
+nav a, .side-header {
     display: flex;
     align-items: center;
     gap: 12px;
