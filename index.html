@@ -6,23 +6,60 @@
     <link rel="stylesheet" href="reset.css">
     <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </head>
   <body>
     <header class="main-header">
-      <div class="search">Search</div>
-      <div class="user">User</div>
-      <div class="greeting">Hi there</div>
-      <div class="actions">do stuff</div>
+      <div class="search">
+        <a href=""><iconify-icon
+            icon="mdi:magnify"></iconify-icon></a>
+        <input type="search" name="search-input" id="search-input">
+      </div>
+      <div class="user">
+        <a href=""><iconify-icon
+            icon="mdi:bell-ring-outline"></iconify-icon></a>
+        <div class="user-icon"></div>
+        <div class="user-name">Milo the Cat</div>
+      </div>
+      <div class="greeting">
+        <div class="user-icon"></div>
+        <div class="greeting-text">
+          <p>Hi there,</p>
+          <h2>Milo the Cat (@milo)</h2>
+        </div>
+      </div>
+      <div class="actions">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </header>
     <aside>
-      <header class="side-header">Dashboard</header>
-      <nav class="main-nav">navs</nav>
-      <nav class="other-nav">more navs</nav>
+      <h1 class="side-header">Dashboard</h1>
+      <nav class="main-nav">
+        <a href="">Home</a>
+        <a href="">Profile</a>
+        <a href="">Messages</a>
+        <a href="">History</a>
+        <a href="">Tasks</a>
+        <a href="">Communities</a>
+      </nav>
+      <nav class="other-nav">
+        <a href="">Settings</a>
+        <a href="">Support</a>
+        <a href="">Privacy</a>
+      </nav>
     </aside>
     <main>
-      <div class="projects">cards</div>
-      <div class="announcements">announcements</div>
-      <div class="trending">trending</div>
+      <div class="projects">
+        <h3>Your Projects</h3>
+      </div>
+      <div class="announcements">
+        <h3>Announcements</h3>
+      </div>
+      <div class="trending">
+        <h3>Trending</h3>
+      </div>
     </main>
   </body>
 </html>
