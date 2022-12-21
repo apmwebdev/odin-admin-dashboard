@@ -10,9 +10,19 @@
 
 body {
     height: 100vh;
+    font-family: "Roboto", sans-serif;
     display: grid;
     grid-template: 7rem auto / 15rem auto;
     background-color: var(--sky);
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 .main-header {
