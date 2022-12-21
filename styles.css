@@ -1,22 +1,28 @@
 :root {
     font-size: 18px;
+    /* colors */
+    --light: #f1faee;
+    --red: #e63946;
+    --sky: #a8dadc;
+    --blue: #457b9d;
+    --navy: #1d3557;
 }
 
 body {
     height: 100vh;
     display: grid;
     grid-template: 7rem auto / 15rem auto;
+    background-color: var(--sky);
 }
 
 header {
-    background-color: #faa;
+    background-color: var(--light);
 }
 
 aside {
     grid-row: 1 / 3;
-    background-color: #afa;
+    background-color: var(--blue);
 }
 
 main {
-    background-color: #aaf;
 }
