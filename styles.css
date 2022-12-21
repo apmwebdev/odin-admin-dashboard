@@ -141,7 +141,13 @@ aside a:hover, aside a:focus {
 
 aside nav {
     display: grid;
-    gap: 24px;
+    gap: var(--gap);
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 main {
