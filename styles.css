@@ -1,0 +1,22 @@
+:root {
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 7rem auto / 15rem auto;
+}
+
+header {
+    background-color: #faa;
+}
+
+aside {
+    grid-row: 1 / 3;
+    background-color: #afa;
+}
+
+main {
+    background-color: #aaf;
+}
