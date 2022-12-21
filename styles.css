@@ -5,7 +5,8 @@
     --red: hsl(355, 78%, 56%); /* #e63946; */
     /*--sky: hsl(182, 43%, 76%); !* #a8dadc; *!*/
     --sky: hsl(182, 43%, 84%); /* #a8dadc; */
-    --blue: hsl(203, 39%, 44%); /* #457b9d; */
+    /*--blue: hsl(203, 39%, 44%); !* #457b9d; *!*/
+    --blue: hsl(203, 44%, 44%); /* #457b9d; */
     --navy: hsl(215, 50%, 23%); /* #1d3557; */
 
     /* Other variables */
@@ -39,18 +40,25 @@ button {
     padding: calc(0.5 * var(--gap)) var(--gap);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
 h1 {
     font-size: 1.9rem;
-    font-weight: bold;
 }
 
 h2 {
     font-size: 1.6rem;
-    font-weight: bold;
 }
 
 h3 {
     font-size: 1.4rem;
+    margin-bottom: var(--gap);
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 iconify-icon {
@@ -61,7 +69,6 @@ iconify-icon {
     background-image: url("milo.jpeg");
     background-size: cover;
     background-color: var(--navy);
-    /*border: 2px solid var(--navy);*/
     border-radius: 1000px;
 }
 
@@ -158,8 +165,43 @@ nav a, .side-header {
 main {
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
+    gap: var(--gap);
+}
+
+main > * {
+    /*padding: var(--gap);*/
 }
 
 .projects {
     grid-row: 1 / 3;
+    padding: var(--gap);
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 250px;
+    gap: calc(2 * var(--gap));
+}
+
+.card {
+    background-color: var(--light);
+    border-radius: 12px;
+    border-left: 12px solid var(--red);
+    padding: 36px 32px 36px 24px;
+    font-size: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.card p {
+    color: var(--blue);
+    overflow: hidden;
+}
+
+.project-actions {
+    display: grid;
+    justify-content: end;
+    grid-auto-flow: column;
+    gap: 36px;
 }
