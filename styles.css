@@ -8,6 +8,7 @@
     /*--blue: hsl(203, 39%, 44%); !* #457b9d; *!*/
     --blue: hsl(203, 44%, 44%); /* #457b9d; */
     --navy: hsl(215, 50%, 23%); /* #1d3557; */
+    --shadow: hsla(0, 0%, 30%, 0.15);
 
     /* Other variables */
     --gap: 20px;
@@ -58,7 +59,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 22px;
 }
 
 iconify-icon {
@@ -78,6 +79,7 @@ iconify-icon {
     grid-template: auto auto / 2fr 1fr;
     gap: var(--gap);
     padding: var(--gap) calc(2 * var(--gap));
+    box-shadow: 0px 4px 4px 0px var(--shadow);
 }
 
 .search {
@@ -141,6 +143,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 48px;
+    box-shadow: 3px 0px 4px 0px var(--shadow);
 }
 
 aside a:hover, aside a:focus {
@@ -188,15 +191,20 @@ main > * {
     background-color: var(--light);
     border-radius: 12px;
     border-left: 12px solid var(--red);
-    padding: 36px 32px 36px 24px;
+    padding: 36px 32px 24px 24px;
     font-size: 20px;
     display: grid;
     gap: 12px;
+    box-shadow: 2px 4px 4px 0px var(--shadow);
 }
 
 .card p {
     color: var(--blue);
     overflow: hidden;
+    line-height: 28px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 .project-actions {
